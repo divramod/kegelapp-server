@@ -49,13 +49,13 @@ function api(opts) {
   app.use(compress());
 
   // rate limiting
-
+/**
   app.use(ratelimit({
     max: opts.ratelimit,
     duration: opts.duration,
     db: redis.createClient()
   }));
-
+*/
   // routing
 
   app.use(router(app));
